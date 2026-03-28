@@ -1,1 +1,0 @@
-# NT_Viernes_simulando
