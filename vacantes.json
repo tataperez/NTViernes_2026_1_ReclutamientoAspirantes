@@ -1,0 +1,142 @@
+[
+    {
+        "id":952,
+        "titulo":"Dise\u00f1ador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2797678,
+        "estado":"activo"
+    },
+    {
+        "id":586,
+        "titulo":"Desarrollador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":4649083,
+        "estado":"activo"
+    },
+    {
+        "id":887,
+        "titulo":"Auxiliar",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":4321837,
+        "estado":"activo"
+    },
+    {
+        "id":341,
+        "titulo":"Contador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":4534230,
+        "estado":"activo"
+    },
+    {
+        "id":56,
+        "titulo":"Contador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2130029,
+        "estado":"activo"
+    },
+    {
+        "id":981,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3815439,
+        "estado":"cerrado"
+    },
+    {
+        "id":275,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2482596,
+        "estado":"activo"
+    },
+    {
+        "id":479,
+        "titulo":"Auxiliar",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2827166,
+        "estado":"cerrado"
+    },
+    {
+        "id":46,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3454209,
+        "estado":"activo"
+    },
+    {
+        "id":51,
+        "titulo":"Dise\u00f1ador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3323911,
+        "estado":"cerrado"
+    },
+    {
+        "id":985,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2497234,
+        "estado":"cerrado"
+    },
+    {
+        "id":413,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3009710,
+        "estado":"activo"
+    },
+    {
+        "id":400,
+        "titulo":"Desarrollador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2317122,
+        "estado":"cerrado"
+    },
+    {
+        "id":652,
+        "titulo":"Contador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":1728610,
+        "estado":"activo"
+    },
+    {
+        "id":618,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2080952,
+        "estado":"activo"
+    },
+    {
+        "id":665,
+        "titulo":"Desarrollador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":1922918,
+        "estado":"activo"
+    },
+    {
+        "id":857,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3642321,
+        "estado":"cerrado"
+    },
+    {
+        "id":431,
+        "titulo":"Auxiliar",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":2658683,
+        "estado":"activo"
+    },
+    {
+        "id":875,
+        "titulo":"Odont\u00f3logo",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":3420331,
+        "estado":"cerrado"
+    },
+    {
+        "id":366,
+        "titulo":"Desarrollador",
+        "descripcion":"Descripci\u00f3n del cargo profesional",
+        "salario":1808716,
+        "estado":"activo"
+    }
+]

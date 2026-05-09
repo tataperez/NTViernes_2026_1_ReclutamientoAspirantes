@@ -1,50 +1,88 @@
+from pathlib import Path
+
 import pandas as pd
 
-def limpiar_datos(data_frame_sucio):
-    data_frame_limpio = data_frame_sucio.copy()
 
-    
-    data_frame_limpio["cargo"] = data_frame_limpio["cargo"].astype("string").str.strip().str.lower()
-    data_frame_limpio["codigo"] = data_frame_limpio["codigo"].astype("string").str.strip().str.lower()
-    data_frame_limpio["estado"] = data_frame_limpio["estado"].astype("string").str.strip().str.lower()
+def limpiar_reclutamiento(df: pd.DataFrame) -> pd.DataFrame:
+    """Limpia y normaliza el DataFrame de reclutamiento (procesos de selección)."""
+    df_limpio = df.copy()
 
-    
-    valores_esperados_cargo = ["desarrollador backend", "analista de datos", "diseñador ux"]
-    data_frame_limpio["cargo"] = data_frame_limpio["cargo"].where(
-        data_frame_limpio["cargo"].isin(valores_esperados_cargo),
-        pd.NA
+    # Validar columnas requeridas
+    columnas_requeridas = [
+        "id",
+        "cargo",
+        "codigo",
+        "estado",
+        "salario_ofertado",
+        "fecha_publicacion",
+    ]
+    faltantes = [col for col in columnas_requeridas if col not in df_limpio.columns]
+    if faltantes:
+        raise ValueError(f"Faltan columnas requeridas: {faltantes}")
+
+    # Limpiar id: numérico y mayor a cero
+    df_limpio["id"] = pd.to_numeric(df_limpio["id"], errors="coerce")
+    df_limpio = df_limpio[df_limpio["id"] > 0]
+
+    # Limpiar cargo: validar contra valores permitidos
+    cargos_validos = [
+        "desarrollador backend",
+        "analista de datos",
+        "diseñador ux",
+    ]
+    cargo_normalizado = (
+        df_limpio["cargo"].astype("string").str.strip().str.lower()
     )
+    df_limpio.loc[~cargo_normalizado.isin(cargos_validos), "cargo"] = pd.NA
 
-    valores_esperados_codigo = ["rec001", "rec045", "rec300"]
-    data_frame_limpio["codigo"] = data_frame_limpio["codigo"].where(
-        data_frame_limpio["codigo"].isin(valores_esperados_codigo),
-        pd.NA
+    # Limpiar código: validar contra valores permitidos
+    codigos_validos = ["rec001", "rec045", "rec300"]
+    codigo_normalizado = (
+        df_limpio["codigo"].astype("string").str.strip().str.lower()
     )
+    df_limpio.loc[~codigo_normalizado.isin(codigos_validos), "codigo"] = pd.NA
 
-    valores_esperados_estado = ["activo", "en proceso", "finalizado"]
-    data_frame_limpio["estado"] = data_frame_limpio["estado"].where(
-        data_frame_limpio["estado"].isin(valores_esperados_estado),
-        pd.NA
+    # Limpiar estado: validar contra valores permitidos
+    estados_validos = ["activo", "en proceso", "finalizado"]
+    estado_normalizado = (
+        df_limpio["estado"].astype("string").str.strip().str.lower()
     )
+    df_limpio.loc[~estado_normalizado.isin(estados_validos), "estado"] = pd.NA
 
-  
-    data_frame_limpio["id"] = pd.to_numeric(data_frame_limpio["id"], errors="coerce")
-    data_frame_limpio["salario_ofertado"] = pd.to_numeric(data_frame_limpio["salario_ofertado"], errors="coerce")
+    # Limpiar salario_ofertado: numérico con piso de validación
+    df_limpio["salario_ofertado"] = pd.to_numeric(
+        df_limpio["salario_ofertado"], errors="coerce"
+    )
+    df_limpio = df_limpio[df_limpio["salario_ofertado"] >= 1000000]
 
-    
-    data_frame_limpio = data_frame_limpio[data_frame_limpio["id"] > 0]
-    data_frame_limpio = data_frame_limpio[data_frame_limpio["salario_ofertado"] >= 1000000]
-
-    
-    
-    data_frame_limpio["fecha_publicacion"] = pd.to_datetime(data_frame_limpio["fecha_publicacion"], errors="coerce")
-
-    
+    # Limpiar fecha_publicacion: datetime válido
+    df_limpio["fecha_publicacion"] = pd.to_datetime(
+        df_limpio["fecha_publicacion"], errors="coerce"
+    )
     fecha_default = pd.to_datetime("2026-01-01")
-    data_frame_limpio["fecha_publicacion"] = data_frame_limpio["fecha_publicacion"].fillna(fecha_default)
+    df_limpio["fecha_publicacion"] = df_limpio["fecha_publicacion"].fillna(
+        fecha_default
+    )
 
-    
+    # Eliminar filas con columnas clave inválidas
     columnas_obligatorias = ["id", "cargo", "salario_ofertado", "codigo", "estado"]
-    data_frame_limpio = data_frame_limpio.dropna(subset=columnas_obligatorias)
+    df_limpio = df_limpio.dropna(subset=columnas_obligatorias)
 
-    return data_frame_limpio
+    return df_limpio.reset_index(drop=True)
+
+
+if __name__ == "__main__":
+    ruta_csv = Path("reclutamiento.csv")
+
+    if not ruta_csv.exists():
+        raise FileNotFoundError(
+            "No se encontro reclutamiento.csv. Verifica la ruta del archivo."
+        )
+
+    df_original = pd.read_csv(ruta_csv)
+    df_limpio = limpiar_reclutamiento(df_original)
+
+    print("--- Vista previa de reclutamiento limpio (head) ---")
+    print(df_limpio.head())
+    print("\n--- Informacion tecnica del DataFrame limpio (info) ---")
+    print(df_limpio.info())
