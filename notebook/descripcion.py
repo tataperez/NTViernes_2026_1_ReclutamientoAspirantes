@@ -41,6 +41,25 @@ def describir_calidad(data_frame_limpio):
     informe_calidad = pd.DataFrame({"faltantes": faltantes, "% faltantes": porcentaje_faltantes})
     print(informe_calidad)
 
+def aplicar_consultas_query(data_frame_limpio):
+    print("\n**** CONSULTAS CON query() ****")
+
+    consulta_1 = data_frame_limpio.query("salario_ofertado >= 5000000 and estado == 'activo'")
+    print("\nConsulta 1: vacantes activas con salario >= 5.000.000")
+    print(consulta_1)
+    print(f"Registros totales: {len(consulta_1)}")
+
+    consulta_2 = data_frame_limpio.query("cargo == 'analista de datos' and fecha_publicacion >= '2026-01-15'")
+    print("\nConsulta 2: analistas de datos publicados desde el 15 de enero de 2026")
+    print(consulta_2)
+    print(f"Registros totales: {len(consulta_2)}")
+
+    consulta_3 = data_frame_limpio.query("codigo in ['rec001', 'rec045'] and salario_ofertado < 6000000")
+    print("\nConsulta 3: vacantes con codigo rec001/rec045 y salario menor a 6.000.000")
+    print(consulta_3)
+    print(f"Registros totales: {len(consulta_3)}")
+
+    return consulta_1, consulta_2, consulta_3
 
 def describir_categoricas(data_frame_limpio):
     print("\n**** FRECUENCIAS DE CATEGORICAS ****")

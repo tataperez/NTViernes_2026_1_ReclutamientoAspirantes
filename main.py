@@ -9,6 +9,7 @@ from notebook.descripcion import (
     inspeccionar_info,
     identificar_tipos,
     describir_calidad,
+    aplicar_consultas_query,
 )
 from notebook.limpieza import limpiar_datos
 from utils.simulacion_reclutamiento import generar_simulacion
@@ -27,3 +28,4 @@ identificar_tipos(simulaciones_limpias)
 describir_calidad(simulaciones_limpias)
 describir_categoricas(simulaciones_limpias)
 describir_fechas(simulaciones_limpias)
+aplicar_consultas_query(simulaciones_limpias)
