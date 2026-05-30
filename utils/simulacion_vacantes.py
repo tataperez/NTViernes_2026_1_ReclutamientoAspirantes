@@ -19,17 +19,18 @@ def generar_vacantes(cantidad):
 
     return vacantes
 
-# Generamos los datos (HU 3: Simulación)
-datos = generar_vacantes(20)
-df = pd.DataFrame(datos)
+if __name__ == "__main__":
+    # Generamos los datos (HU 3: Simulación)
+    datos = generar_vacantes(20)
+    df = pd.DataFrame(datos)
 
-# Exportamos en los dos formatos que pide la HU 3
-df.to_csv("vacantes.csv", index=False)
-df.to_json("vacantes.json", orient="records", indent=4)
+    # Exportamos en los dos formatos que pide la HU 3
+    df.to_csv("vacantes.csv", index=False)
+    df.to_json("vacantes.json", orient="records", indent=4)
 
-# Mostramos los primeros 5 registros (HU 2: head)
-print("--- Vista previa de las Vacantes (head) ---")
-print(df.head())
+    # Mostramos los primeros 5 registros (HU 2: head)
+    print("--- Vista previa de las Vacantes (head) ---")
+    print(df.head())
 
-print("\n--- Información técnica del DataFrame (info) ---")
-print(df.info())
+    print("\n--- Información técnica del DataFrame (info) ---")
+    print(df.info())

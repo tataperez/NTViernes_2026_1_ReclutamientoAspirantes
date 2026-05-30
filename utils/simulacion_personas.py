@@ -35,13 +35,14 @@ def generar_personas(cantidad):
     return personas
 
 
-# Generar 50 personas
-data = generar_personas(50)
+if __name__ == "__main__":
+    # Generar 50 personas
+    data = generar_personas(50)
 
-# Convertir a DataFrame
-df = pd.DataFrame(data)
+    # Convertir a DataFrame
+    df = pd.DataFrame(data)
 
-# Guardar en CSV
-df.to_csv("personas_generadas.csv", index=False)
+    # Guardar en CSV
+    df.to_csv("personas_generadas.csv", index=False)
 
-print(df.head())
+    print(df.head())

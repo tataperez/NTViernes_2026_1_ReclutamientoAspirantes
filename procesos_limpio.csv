@@ -1,0 +1,43 @@
+idProceso,fechaInicio,estado,observaciones
+1.0,2023-07-03,en_proceso,No cumple requisitos
+3.0,2023-11-10,rechazado,No cumple requisitos
+4.0,2023-10-09,rechazado,Buen perfil
+5.0,2023-09-21,finalizado,Falta experiencia
+6.0,2023-05-12,rechazado,Aprobado para siguiente fase
+7.0,2023-04-23,aprobado,No cumple requisitos
+9.0,2023-12-14,rechazado,No cumple requisitos
+11.0,2023-03-27,aprobado,Falta experiencia
+12.0,2023-05-22,finalizado,Buen perfil
+13.0,2023-10-29,rechazado,No cumple requisitos
+15.0,2023-12-03,rechazado,Falta experiencia
+16.0,2023-01-15,rechazado,
+17.0,2023-08-17,rechazado,Buen perfil
+19.0,2023-10-13,finalizado,
+23.0,2023-01-30,finalizado,Falta experiencia
+24.0,2023-07-29,rechazado,Buen perfil
+26.0,2023-04-03,en_proceso,Buen perfil
+29.0,2023-04-09,rechazado,No cumple requisitos
+31.0,2023-09-27,aprobado,
+33.0,2023-05-13,finalizado,Falta experiencia
+34.0,2023-02-28,en_proceso,Falta experiencia
+37.0,2023-02-28,aprobado,
+39.0,2023-04-08,aprobado,
+42.0,2023-01-09,finalizado,Falta experiencia
+44.0,2023-09-12,aprobado,No cumple requisitos
+45.0,2023-05-02,aprobado,Buen perfil
+46.0,2023-12-25,finalizado,No cumple requisitos
+47.0,2023-03-11,finalizado,Aprobado para siguiente fase
+48.0,2023-01-27,rechazado,
+50.0,2023-07-20,finalizado,Aprobado para siguiente fase
+52.0,2023-05-29,rechazado,No cumple requisitos
+54.0,2023-02-23,en_proceso,No cumple requisitos
+56.0,2023-11-13,aprobado,
+58.0,2023-05-02,en_proceso,No cumple requisitos
+61.0,2023-07-12,finalizado,Buen perfil
+62.0,2023-03-16,finalizado,Buen perfil
+63.0,2023-03-21,aprobado,Buen perfil
+68.0,2023-03-25,aprobado,Aprobado para siguiente fase
+71.0,2023-05-06,aprobado,Falta experiencia
+72.0,2023-07-05,finalizado,
+77.0,2023-05-21,en_proceso,Falta experiencia
+80.0,2023-07-30,en_proceso,

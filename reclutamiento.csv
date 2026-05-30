@@ -1,0 +1,81 @@
+id,cargo,salario_ofertado,codigo,estado,fecha_publicacion
+63.0,contador publico,5000000.0,rec045,finalizado,2026-03-01
+74.0,desarrollador backend,7000000.0, REC300,en proceso,2026-01-15
+85.0,gerente de compras,7000000.0,rec045,finalizado,2026-01-04
+121.0,diseñador ux,5000000.0,rec300,activo,
+63.0,desarrollador backend,3500000.0, REC001,en proceso,2026-01-26
+71.0,desarrollador backend,7000000.0,rec001,FINALIZADO,2026-01-12
+,diseñador ux,5000000.0,rec045,activo,2026-01-03
+85.0,diseñador ux,3500000.0, REC001,en proceso,2026-03-01
+40.0,diseñador ux,-500000.0,rec001,finalizado,2026-02-15
+,desarrollador backend,3500000.0,rec045,en proceso,2026-02-15
+30.0,analista de datos,3500000.0,rec045,finalizado,2026-02-23
+187.0,contador publico,3500000.0,rec045,activo,2026-01-08
+8.0,contador publico,5000000.0,rec001,en proceso,2026-01-02
+,desarrollador backend,3500000.0,rec001,finalizado,2026-01-17
+122.0,desarrollador backend,0.0,rec001,en proceso,2026-01-11
+57.0,diseñador ux,-500000.0,rec045,en proceso,2026-01-09
+10.0,gerente de compras,3500000.0,rec300,activo,2026-02-05
+,diseñador ux,3500000.0,rec045,activo,2026-02-05
+10.0,diseñador ux,7000000.0, REC300,activo,2026-03-01
+71.0,gerente de compras,3500000.0,rec300,activo,2026-01-24
+63.0,desarrollador backend,,rec300,en proceso,2026-02-28
+49.0,analista de datos,5000000.0,rec001,finalizado,2026-02-04
+121.0,analista de datos,3500000.0,rec001,en proceso,2026-01-10
+43.0,diseñador ux,,rec045,en proceso,2026-01-02
+,analista de datos,5000000.0,rec001,en proceso,2026-01-11
+174.0,analista de datos,3500000.0,rec045,activo,2026-02-10
+126.0,desarrollador backend,0.0,rec001,finalizado,2026-01-24
+17.0,analista de datos,7000000.0, REC300,en proceso,2026-02-24
+3.0,analista de datos,,rec001,activo,2026-02-16
+31.0,desarrollador backend,5000000.0, REC001,activo,2026-02-27
+108.0,desarrollador backend,7000000.0,rec001,en proceso,2026-02-09
+94.0,gerente de compras,7000000.0,rec045,finalizado,2026-01-21
+32.0,diseñador ux,7000000.0, REC001,activo,2026-02-24
+149.0,analista de datos,5000000.0,rec300,activo,
+138.0,diseñador ux,5000000.0, REC001,en proceso,2026-01-27
+156.0,analista de datos,3500000.0,rec045,activo,2026-02-28
+90.0,diseñador ux,5000000.0,rec045,activo,
+136.0,analista de datos,3500000.0,rec300,FINALIZADO,2026-03-01
+78.0,desarrollador backend,-500000.0,rec300,activo,2026-01-30
+,analista de datos,3500000.0,rec001,activo,2026-01-27
+196.0,diseñador ux,5000000.0, REC001,activo,2026-02-02
+154.0,diseñador ux,,rec045,activo,2026-01-07
+104.0,diseñador ux,-500000.0,rec045,en proceso,2026-01-22
+,analista de datos,7000000.0,rec045,finalizado,2026-02-11
+196.0,gerente de compras,7000000.0,rec045,finalizado,2026-01-13
+2.0,contador publico,5000000.0,rec045,activo,2026-02-16
+116.0,desarrollador backend,0.0,rec300,activo,2026-02-16
+164.0,analista de datos,7000000.0,rec001,activo,2026-02-11
+,analista de datos,5000000.0,rec045,finalizado,2026-02-22
+41.0,contador publico,3500000.0,rec045,en proceso,2026-01-09
+27.0,desarrollador backend,5000000.0,rec001,FINALIZADO,2026-02-19
+10.0,diseñador ux,7000000.0,rec001,finalizado,2026-01-26
+,analista de datos,3500000.0,rec001,en proceso,2026-02-02
+34.0,diseñador ux,7000000.0, REC300,en proceso,2026-02-26
+113.0,gerente de compras,7000000.0,rec045,activo,2026-02-05
+120.0,diseñador ux,5000000.0,rec300,en proceso,2026-02-25
+32.0,diseñador ux,5000000.0, REC045,finalizado,2026-02-20
+13.0,contador publico,7000000.0,rec045,finalizado,2026-01-16
+40.0,analista de datos,3500000.0, REC001,finalizado,2026-02-13
+26.0,analista de datos,-500000.0,rec045,finalizado,2026-01-31
+44.0,diseñador ux,,rec300,activo,2026-01-16
+,analista de datos,3500000.0,rec001,activo,2026-02-03
+35.0,gerente de compras,5000000.0,rec045,en proceso,2026-01-29
+,desarrollador backend,7000000.0,rec300,activo,2026-01-17
+,analista de datos,3500000.0,rec001,finalizado,2026-02-21
+,analista de datos,7000000.0,rec300,en proceso,2026-01-27
+0.0,desarrollador backend,3500000.0,rec300,FINALIZADO,2026-01-04
+88.0,desarrollador backend,7000000.0,rec045,activo,
+,diseñador ux,5000000.0,rec045,en proceso,2026-02-04
+,diseñador ux,3500000.0,rec045,en proceso,2026-02-23
+,diseñador ux,3500000.0,rec300,activo,2026-02-07
+36.0,desarrollador backend,7000000.0,rec045,en proceso,
+15.0,desarrollador backend,7000000.0, REC300,en proceso,2026-02-05
+41.0,analista de datos,5000000.0,rec300,activo,2026-02-26
+188.0,analista de datos,7000000.0, REC001,activo,2026-02-15
+80.0,analista de datos,7000000.0,rec300,finalizado,2026-01-21
+125.0,contador publico,7000000.0,rec045,activo,2026-02-25
+131.0,diseñador ux,-500000.0,rec001,activo,2026-01-07
+,analista de datos,7000000.0,rec001,finalizado,2026-01-27
+106.0,analista de datos,0.0,rec045,en proceso,2026-02-20
